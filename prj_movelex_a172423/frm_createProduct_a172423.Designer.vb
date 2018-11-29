@@ -32,7 +32,7 @@ Partial Class frm_createProduct_a172423
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_quantity = New System.Windows.Forms.TextBox()
         Me.lbl_type = New System.Windows.Forms.Label()
-        Me.rb_type = New System.Windows.Forms.RadioButton()
+        Me.rb_desk_clock = New System.Windows.Forms.RadioButton()
         Me.rb_radio = New System.Windows.Forms.RadioButton()
         Me.rb_clockRadio = New System.Windows.Forms.RadioButton()
         Me.lbl_material = New System.Windows.Forms.Label()
@@ -45,7 +45,13 @@ Partial Class frm_createProduct_a172423
         Me.product_image = New System.Windows.Forms.PictureBox()
         Me.btn_cancel = New System.Windows.Forms.Button()
         Me.btn_create = New System.Windows.Forms.Button()
-        Me.lbl_test = New System.Windows.Forms.Label()
+        Me.lbl_error_name = New System.Windows.Forms.Label()
+        Me.lbl_error_id = New System.Windows.Forms.Label()
+        Me.lbl_error_price = New System.Windows.Forms.Label()
+        Me.lbl_error_quantity = New System.Windows.Forms.Label()
+        Me.lbl_error_type = New System.Windows.Forms.Label()
+        Me.lbl_error_material = New System.Windows.Forms.Label()
+        Me.lbl_error_battery = New System.Windows.Forms.Label()
         CType(Me.product_image, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -132,16 +138,16 @@ Partial Class frm_createProduct_a172423
         Me.lbl_type.TabIndex = 9
         Me.lbl_type.Text = "Type"
         '
-        'rb_type
+        'rb_desk_clock
         '
-        Me.rb_type.AutoSize = True
-        Me.rb_type.Location = New System.Drawing.Point(19, 231)
-        Me.rb_type.Name = "rb_type"
-        Me.rb_type.Size = New System.Drawing.Size(80, 17)
-        Me.rb_type.TabIndex = 10
-        Me.rb_type.TabStop = True
-        Me.rb_type.Text = "Desk Clock"
-        Me.rb_type.UseVisualStyleBackColor = True
+        Me.rb_desk_clock.AutoSize = True
+        Me.rb_desk_clock.Location = New System.Drawing.Point(19, 231)
+        Me.rb_desk_clock.Name = "rb_desk_clock"
+        Me.rb_desk_clock.Size = New System.Drawing.Size(80, 17)
+        Me.rb_desk_clock.TabIndex = 10
+        Me.rb_desk_clock.TabStop = True
+        Me.rb_desk_clock.Text = "Desk Clock"
+        Me.rb_desk_clock.UseVisualStyleBackColor = True
         '
         'rb_radio
         '
@@ -249,14 +255,89 @@ Partial Class frm_createProduct_a172423
         Me.btn_create.Text = "CREATE"
         Me.btn_create.UseVisualStyleBackColor = False
         '
-        'lbl_test
+        'lbl_error_name
         '
-        Me.lbl_test.AutoSize = True
-        Me.lbl_test.Location = New System.Drawing.Point(16, 425)
-        Me.lbl_test.Name = "lbl_test"
-        Me.lbl_test.Size = New System.Drawing.Size(39, 13)
-        Me.lbl_test.TabIndex = 23
-        Me.lbl_test.Text = "Label3"
+        Me.lbl_error_name.AutoSize = True
+        Me.lbl_error_name.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_error_name.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_name.Location = New System.Drawing.Point(16, 146)
+        Me.lbl_error_name.Name = "lbl_error_name"
+        Me.lbl_error_name.Size = New System.Drawing.Size(98, 16)
+        Me.lbl_error_name.TabIndex = 22
+        Me.lbl_error_name.Text = "lbl_error_name"
+        Me.lbl_error_name.Visible = False
+        '
+        'lbl_error_id
+        '
+        Me.lbl_error_id.AutoSize = True
+        Me.lbl_error_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_error_id.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_id.Location = New System.Drawing.Point(238, 148)
+        Me.lbl_error_id.Name = "lbl_error_id"
+        Me.lbl_error_id.Size = New System.Drawing.Size(75, 16)
+        Me.lbl_error_id.TabIndex = 23
+        Me.lbl_error_id.Text = "lbl_error_id"
+        Me.lbl_error_id.Visible = False
+        '
+        'lbl_error_price
+        '
+        Me.lbl_error_price.AutoSize = True
+        Me.lbl_error_price.BackColor = System.Drawing.Color.BlueViolet
+        Me.lbl_error_price.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_error_price.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_price.Location = New System.Drawing.Point(442, 150)
+        Me.lbl_error_price.Name = "lbl_error_price"
+        Me.lbl_error_price.Size = New System.Drawing.Size(94, 16)
+        Me.lbl_error_price.TabIndex = 24
+        Me.lbl_error_price.Text = "lbl_error_price"
+        Me.lbl_error_price.Visible = False
+        '
+        'lbl_error_quantity
+        '
+        Me.lbl_error_quantity.AutoSize = True
+        Me.lbl_error_quantity.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_quantity.Location = New System.Drawing.Point(632, 150)
+        Me.lbl_error_quantity.Name = "lbl_error_quantity"
+        Me.lbl_error_quantity.Size = New System.Drawing.Size(87, 13)
+        Me.lbl_error_quantity.TabIndex = 25
+        Me.lbl_error_quantity.Text = "lbl_error_quantity"
+        Me.lbl_error_quantity.Visible = False
+        '
+        'lbl_error_type
+        '
+        Me.lbl_error_type.AutoSize = True
+        Me.lbl_error_type.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_error_type.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_type.Location = New System.Drawing.Point(19, 301)
+        Me.lbl_error_type.Name = "lbl_error_type"
+        Me.lbl_error_type.Size = New System.Drawing.Size(90, 16)
+        Me.lbl_error_type.TabIndex = 26
+        Me.lbl_error_type.Text = "lbl_error_type"
+        Me.lbl_error_type.Visible = False
+        '
+        'lbl_error_material
+        '
+        Me.lbl_error_material.AutoSize = True
+        Me.lbl_error_material.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_error_material.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_material.Location = New System.Drawing.Point(241, 258)
+        Me.lbl_error_material.Name = "lbl_error_material"
+        Me.lbl_error_material.Size = New System.Drawing.Size(112, 16)
+        Me.lbl_error_material.TabIndex = 27
+        Me.lbl_error_material.Text = "lbl_error_material"
+        Me.lbl_error_material.Visible = False
+        '
+        'lbl_error_battery
+        '
+        Me.lbl_error_battery.AutoSize = True
+        Me.lbl_error_battery.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_error_battery.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_battery.Location = New System.Drawing.Point(442, 257)
+        Me.lbl_error_battery.Name = "lbl_error_battery"
+        Me.lbl_error_battery.Size = New System.Drawing.Size(105, 16)
+        Me.lbl_error_battery.TabIndex = 28
+        Me.lbl_error_battery.Text = "lbl_error_battery"
+        Me.lbl_error_battery.Visible = False
         '
         'frm_createProduct_a172423
         '
@@ -264,7 +345,13 @@ Partial Class frm_createProduct_a172423
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlueViolet
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.lbl_test)
+        Me.Controls.Add(Me.lbl_error_battery)
+        Me.Controls.Add(Me.lbl_error_material)
+        Me.Controls.Add(Me.lbl_error_type)
+        Me.Controls.Add(Me.lbl_error_quantity)
+        Me.Controls.Add(Me.lbl_error_price)
+        Me.Controls.Add(Me.lbl_error_id)
+        Me.Controls.Add(Me.lbl_error_name)
         Me.Controls.Add(Me.btn_create)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.product_image)
@@ -276,7 +363,7 @@ Partial Class frm_createProduct_a172423
         Me.Controls.Add(Me.lbl_material)
         Me.Controls.Add(Me.rb_clockRadio)
         Me.Controls.Add(Me.rb_radio)
-        Me.Controls.Add(Me.rb_type)
+        Me.Controls.Add(Me.rb_desk_clock)
         Me.Controls.Add(Me.lbl_type)
         Me.Controls.Add(Me.txt_quantity)
         Me.Controls.Add(Me.Label1)
@@ -305,7 +392,7 @@ Partial Class frm_createProduct_a172423
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_quantity As TextBox
     Friend WithEvents lbl_type As Label
-    Friend WithEvents rb_type As RadioButton
+    Friend WithEvents rb_desk_clock As RadioButton
     Friend WithEvents rb_radio As RadioButton
     Friend WithEvents rb_clockRadio As RadioButton
     Friend WithEvents lbl_material As Label
@@ -319,4 +406,11 @@ Partial Class frm_createProduct_a172423
     Friend WithEvents btn_cancel As Button
     Friend WithEvents btn_create As Button
     Friend WithEvents lbl_test As Label
+    Friend WithEvents lbl_error_name As Label
+    Friend WithEvents lbl_error_id As Label
+    Friend WithEvents lbl_error_price As Label
+    Friend WithEvents lbl_error_quantity As Label
+    Friend WithEvents lbl_error_type As Label
+    Friend WithEvents lbl_error_material As Label
+    Friend WithEvents lbl_error_battery As Label
 End Class

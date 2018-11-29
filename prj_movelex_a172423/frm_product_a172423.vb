@@ -33,6 +33,7 @@
     End Sub
 
     Private Sub btn_create_Click(sender As Object, e As EventArgs) Handles btn_create.Click
-
+        frm_createProduct_a172423.Show()
+        Me.Close()
     End Sub
 End Class
