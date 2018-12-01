@@ -11,4 +11,22 @@
 
     'date today
     Public today As Date = Date.Now()
+
+    Public Sub run_sql_command(sql As String)
+        Dim command As New OleDb.OleDbCommand(sql, myconnection2)
+
+        Try
+
+            command.Connection.Open()
+            command.ExecuteNonQuery()
+            command.Connection.Close()
+
+        Catch ex As Exception
+
+            Beep()
+            MsgBox("Opps! this is so embarrassing, an error has occur. " & ex.Message)
+            command.Connection.Close()
+
+        End Try
+    End Sub
 End Module

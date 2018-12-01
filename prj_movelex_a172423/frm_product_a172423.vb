@@ -21,7 +21,7 @@
 
     Private Sub btn_home_Click(sender As Object, e As EventArgs) Handles btn_home.Click
         frm_mainmenu_a172423.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub grd_product_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles grd_product.CellContentClick
