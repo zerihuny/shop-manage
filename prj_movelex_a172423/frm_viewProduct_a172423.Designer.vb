@@ -44,6 +44,16 @@ Partial Class frm_viewProduct_a172423
         Me.txt_created_at = New System.Windows.Forms.TextBox()
         Me.txt_updated_at = New System.Windows.Forms.TextBox()
         Me.cmb_type = New System.Windows.Forms.ComboBox()
+        Me.lbl_error_name = New System.Windows.Forms.Label()
+        Me.lbl_error_quantity = New System.Windows.Forms.Label()
+        Me.lbl_error_material = New System.Windows.Forms.Label()
+        Me.lbl_error_price = New System.Windows.Forms.Label()
+        Me.lbl_error_type = New System.Windows.Forms.Label()
+        Me.lbl_error_battery = New System.Windows.Forms.Label()
+        Me.btn_browse = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.lbl_filename_image = New System.Windows.Forms.Label()
+        Me.lbl_error_image = New System.Windows.Forms.Label()
         CType(Me.pic_product, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -241,12 +251,120 @@ Partial Class frm_viewProduct_a172423
         Me.cmb_type.Size = New System.Drawing.Size(100, 21)
         Me.cmb_type.TabIndex = 24
         '
+        'lbl_error_name
+        '
+        Me.lbl_error_name.AutoSize = True
+        Me.lbl_error_name.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_name.Location = New System.Drawing.Point(378, 145)
+        Me.lbl_error_name.Name = "lbl_error_name"
+        Me.lbl_error_name.Size = New System.Drawing.Size(60, 13)
+        Me.lbl_error_name.TabIndex = 25
+        Me.lbl_error_name.Text = "error_name"
+        Me.lbl_error_name.Visible = False
+        '
+        'lbl_error_quantity
+        '
+        Me.lbl_error_quantity.AutoSize = True
+        Me.lbl_error_quantity.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_quantity.Location = New System.Drawing.Point(378, 188)
+        Me.lbl_error_quantity.Name = "lbl_error_quantity"
+        Me.lbl_error_quantity.Size = New System.Drawing.Size(71, 13)
+        Me.lbl_error_quantity.TabIndex = 26
+        Me.lbl_error_quantity.Text = "error_quantity"
+        Me.lbl_error_quantity.Visible = False
+        '
+        'lbl_error_material
+        '
+        Me.lbl_error_material.AutoSize = True
+        Me.lbl_error_material.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_material.Location = New System.Drawing.Point(378, 236)
+        Me.lbl_error_material.Name = "lbl_error_material"
+        Me.lbl_error_material.Size = New System.Drawing.Size(70, 13)
+        Me.lbl_error_material.TabIndex = 27
+        Me.lbl_error_material.Text = "error_material"
+        Me.lbl_error_material.Visible = False
+        '
+        'lbl_error_price
+        '
+        Me.lbl_error_price.AutoSize = True
+        Me.lbl_error_price.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_price.Location = New System.Drawing.Point(699, 142)
+        Me.lbl_error_price.Name = "lbl_error_price"
+        Me.lbl_error_price.Size = New System.Drawing.Size(57, 13)
+        Me.lbl_error_price.TabIndex = 29
+        Me.lbl_error_price.Text = "error_price"
+        Me.lbl_error_price.Visible = False
+        '
+        'lbl_error_type
+        '
+        Me.lbl_error_type.AutoSize = True
+        Me.lbl_error_type.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_type.Location = New System.Drawing.Point(699, 189)
+        Me.lbl_error_type.Name = "lbl_error_type"
+        Me.lbl_error_type.Size = New System.Drawing.Size(54, 13)
+        Me.lbl_error_type.TabIndex = 30
+        Me.lbl_error_type.Text = "error_type"
+        Me.lbl_error_type.Visible = False
+        '
+        'lbl_error_battery
+        '
+        Me.lbl_error_battery.AutoSize = True
+        Me.lbl_error_battery.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_battery.Location = New System.Drawing.Point(699, 236)
+        Me.lbl_error_battery.Name = "lbl_error_battery"
+        Me.lbl_error_battery.Size = New System.Drawing.Size(66, 13)
+        Me.lbl_error_battery.TabIndex = 31
+        Me.lbl_error_battery.Text = "error_battery"
+        Me.lbl_error_battery.Visible = False
+        '
+        'btn_browse
+        '
+        Me.btn_browse.Location = New System.Drawing.Point(33, 284)
+        Me.btn_browse.Name = "btn_browse"
+        Me.btn_browse.Size = New System.Drawing.Size(75, 23)
+        Me.btn_browse.TabIndex = 32
+        Me.btn_browse.Text = "Browse"
+        Me.btn_browse.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'lbl_filename_image
+        '
+        Me.lbl_filename_image.AutoSize = True
+        Me.lbl_filename_image.Location = New System.Drawing.Point(114, 284)
+        Me.lbl_filename_image.Name = "lbl_filename_image"
+        Me.lbl_filename_image.Size = New System.Drawing.Size(68, 13)
+        Me.lbl_filename_image.TabIndex = 33
+        Me.lbl_filename_image.Text = "picture name"
+        '
+        'lbl_error_image
+        '
+        Me.lbl_error_image.AutoSize = True
+        Me.lbl_error_image.ForeColor = System.Drawing.Color.Tomato
+        Me.lbl_error_image.Location = New System.Drawing.Point(30, 310)
+        Me.lbl_error_image.Name = "lbl_error_image"
+        Me.lbl_error_image.Size = New System.Drawing.Size(78, 13)
+        Me.lbl_error_image.TabIndex = 34
+        Me.lbl_error_image.Text = "lbl_error_image"
+        Me.lbl_error_image.Visible = False
+        '
         'frm_viewProduct_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlueViolet
         Me.ClientSize = New System.Drawing.Size(930, 407)
+        Me.Controls.Add(Me.lbl_error_image)
+        Me.Controls.Add(Me.lbl_filename_image)
+        Me.Controls.Add(Me.btn_browse)
+        Me.Controls.Add(Me.lbl_error_battery)
+        Me.Controls.Add(Me.lbl_error_type)
+        Me.Controls.Add(Me.lbl_error_price)
+        Me.Controls.Add(Me.lbl_error_material)
+        Me.Controls.Add(Me.lbl_error_quantity)
+        Me.Controls.Add(Me.lbl_error_name)
         Me.Controls.Add(Me.cmb_type)
         Me.Controls.Add(Me.txt_updated_at)
         Me.Controls.Add(Me.txt_created_at)
@@ -299,4 +417,14 @@ Partial Class frm_viewProduct_a172423
     Friend WithEvents txt_created_at As TextBox
     Friend WithEvents txt_updated_at As TextBox
     Friend WithEvents cmb_type As ComboBox
+    Friend WithEvents lbl_error_name As Label
+    Friend WithEvents lbl_error_quantity As Label
+    Friend WithEvents lbl_error_material As Label
+    Friend WithEvents lbl_error_price As Label
+    Friend WithEvents lbl_error_type As Label
+    Friend WithEvents lbl_error_battery As Label
+    Friend WithEvents btn_browse As Button
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents lbl_filename_image As Label
+    Friend WithEvents lbl_error_image As Label
 End Class

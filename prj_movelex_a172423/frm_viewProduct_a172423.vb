@@ -10,19 +10,10 @@
         txt_name.Text = table.Rows(0).Item(1)
         txt_price.Text = table.Rows(0).Item(2)
         txt_quantity.Text = table.Rows(0).Item(3)
-        If table.Rows(0).Item(4) = "Desk Clock" Then
-            cmb_type.Items.Add("Desk Clock")
-            cmb_type.Items.Add("Clock Radio")
-            cmb_type.Items.Add("Radio")
-        ElseIf table.Rows(0).Item(4) = "Clock Radio" Then
-            cmb_type.Items.Add("Clock Radio")
-            cmb_type.Items.Add("Desk Clock")
-            cmb_type.Items.Add("Radio")
-        Else
-            cmb_type.Items.Add("Radio")
-            cmb_type.Items.Add("Desk Clock")
-            cmb_type.Items.Add("Clock Radio")
-        End If
+        cmb_type.Text = table.Rows(0).Item(4)
+        cmb_type.Items.Add("Desk Clock")
+        cmb_type.Items.Add("Clock Radio")
+        cmb_type.Items.Add("Radio")
         txt_material.Text = table.Rows(0).Item(5)
         txt_battery.Text = table.Rows(0).Item(6)
         txt_created_at.Text = table.Rows(0).Item(8)
@@ -58,6 +49,94 @@
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
+        Me.Refresh()
+
+        Dim checkInput As Boolean = True
+
+        'name
+        If String.IsNullOrEmpty(txt_name.Text) Then
+            lbl_error_name.Visible = True
+            lbl_error_name.Text = "Enter product name!"
+            checkInput = False
+        Else
+            lbl_error_name.Visible = False
+        End If
+
+        'price
+        If String.IsNullOrEmpty(txt_price.Text) Then
+            lbl_error_price.Visible = True
+            lbl_error_price.Text = "Enter product price!"
+            checkInput = False
+        ElseIf IsNumeric(txt_price.Text) = False Then
+            lbl_error_price.Visible = True
+            lbl_error_price.Text = "Number only!"
+            checkInput = False
+        Else
+            lbl_error_price.Visible = False
+        End If
+
+        'quantity
+        If String.IsNullOrEmpty(txt_quantity.Text) Then
+            lbl_error_quantity.Visible = True
+            lbl_error_quantity.Text = "Enter product quantity!"
+            checkInput = False
+        ElseIf IsNumeric(txt_quantity.Text) = False Then
+            lbl_error_quantity.Visible = True
+            lbl_error_quantity.Text = "Number only!"
+            checkInput = False
+        Else
+            lbl_error_quantity.Visible = False
+        End If
+
+        'material
+        If String.IsNullOrEmpty(txt_material.Text) Then
+            lbl_error_material.Visible = True
+            lbl_error_material.Text = "Enter product material!"
+            checkInput = False
+        Else
+            lbl_error_material.Visible = False
+        End If
+
+        'battery
+        If String.IsNullOrEmpty(txt_battery.Text) Then
+            lbl_error_battery.Visible = True
+            lbl_error_battery.Text = "Enter product battery!"
+            checkInput = False
+        Else
+            lbl_error_battery.Visible = False
+        End If
+
+        'image
+        If String.IsNullOrEmpty(lbl_filename_image.Text) Then
+            lbl_error_image.Visible = True
+            lbl_error_image.Text = "Select product image!"
+            checkInput = False
+        Else
+            lbl_error_image.Visible = False
+        End If
+
+
+    End Sub
+
+    Private Sub btn_browse_Click(sender As Object, e As EventArgs) Handles btn_browse.Click
+        Dim folder As String = My.Computer.FileSystem.SpecialDirectories.Desktop
+
+        OpenFileDialog1.InitialDirectory = folder
+        OpenFileDialog1.FileName = ""
+        OpenFileDialog1.Filter = "JPG files (*.jpg)|*.jpg"
+        OpenFileDialog1.ShowDialog()
+
+        Try
+            lbl_error_image.Visible = False
+            pic_product.BackgroundImage = Image.FromFile(OpenFileDialog1.FileName)
+            lbl_filename_image.Text = OpenFileDialog1.FileName
+        Catch ex As Exception
+            If String.IsNullOrEmpty(lbl_filename_image.Text) Then
+                lbl_error_image.Visible = True
+                lbl_error_image.Text = "Please select a image!"
+            Else
+            End If
+        End Try
 
     End Sub
 End Class
