@@ -23,42 +23,30 @@ Partial Class frm_customer_a172423
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lbl_title = New System.Windows.Forms.Label()
-        Me.btn_exit = New System.Windows.Forms.Button()
         Me.btn_home = New System.Windows.Forms.Button()
         Me.grd_customer = New System.Windows.Forms.DataGridView()
         Me.lbl_total = New System.Windows.Forms.Label()
+        Me.btn_create_customer = New System.Windows.Forms.Button()
         CType(Me.grd_customer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lbl_title
         '
         Me.lbl_title.AutoSize = True
-        Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.lbl_title.Location = New System.Drawing.Point(294, 28)
+        Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_title.ForeColor = System.Drawing.Color.White
+        Me.lbl_title.Location = New System.Drawing.Point(12, 9)
         Me.lbl_title.Name = "lbl_title"
-        Me.lbl_title.Size = New System.Drawing.Size(179, 41)
+        Me.lbl_title.Size = New System.Drawing.Size(247, 56)
         Me.lbl_title.TabIndex = 0
         Me.lbl_title.Text = "Customer"
-        '
-        'btn_exit
-        '
-        Me.btn_exit.BackColor = System.Drawing.Color.OrangeRed
-        Me.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_exit.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_exit.Location = New System.Drawing.Point(219, 389)
-        Me.btn_exit.Name = "btn_exit"
-        Me.btn_exit.Size = New System.Drawing.Size(75, 23)
-        Me.btn_exit.TabIndex = 1
-        Me.btn_exit.Text = "Exit"
-        Me.btn_exit.UseVisualStyleBackColor = False
         '
         'btn_home
         '
         Me.btn_home.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_home.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_home.Location = New System.Drawing.Point(464, 389)
+        Me.btn_home.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_home.Location = New System.Drawing.Point(562, 40)
         Me.btn_home.Name = "btn_home"
         Me.btn_home.Size = New System.Drawing.Size(75, 23)
         Me.btn_home.TabIndex = 2
@@ -69,9 +57,9 @@ Partial Class frm_customer_a172423
         '
         Me.grd_customer.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.ColumnHeader
         Me.grd_customer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grd_customer.Location = New System.Drawing.Point(102, 85)
+        Me.grd_customer.Location = New System.Drawing.Point(57, 85)
         Me.grd_customer.Name = "grd_customer"
-        Me.grd_customer.Size = New System.Drawing.Size(571, 270)
+        Me.grd_customer.Size = New System.Drawing.Size(635, 270)
         Me.grd_customer.TabIndex = 3
         '
         'lbl_total
@@ -79,21 +67,35 @@ Partial Class frm_customer_a172423
         Me.lbl_total.AutoSize = True
         Me.lbl_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_total.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbl_total.Location = New System.Drawing.Point(99, 358)
+        Me.lbl_total.Location = New System.Drawing.Point(54, 358)
         Me.lbl_total.Name = "lbl_total"
         Me.lbl_total.Size = New System.Drawing.Size(0, 16)
         Me.lbl_total.TabIndex = 4
+        '
+        'btn_create_customer
+        '
+        Me.btn_create_customer.BackColor = System.Drawing.Color.Lime
+        Me.btn_create_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_create_customer.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_create_customer.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btn_create_customer.Location = New System.Drawing.Point(643, 40)
+        Me.btn_create_customer.Name = "btn_create_customer"
+        Me.btn_create_customer.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btn_create_customer.Size = New System.Drawing.Size(75, 23)
+        Me.btn_create_customer.TabIndex = 5
+        Me.btn_create_customer.Text = "Create"
+        Me.btn_create_customer.UseVisualStyleBackColor = False
         '
         'frm_customer_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.Black
+        Me.ClientSize = New System.Drawing.Size(772, 388)
+        Me.Controls.Add(Me.btn_create_customer)
         Me.Controls.Add(Me.lbl_total)
         Me.Controls.Add(Me.grd_customer)
         Me.Controls.Add(Me.btn_home)
-        Me.Controls.Add(Me.btn_exit)
         Me.Controls.Add(Me.lbl_title)
         Me.Name = "frm_customer_a172423"
         Me.Text = "Customer"
@@ -104,8 +106,8 @@ Partial Class frm_customer_a172423
     End Sub
 
     Friend WithEvents lbl_title As Label
-    Friend WithEvents btn_exit As Button
     Friend WithEvents btn_home As Button
     Friend WithEvents grd_customer As DataGridView
     Friend WithEvents lbl_total As Label
+    Friend WithEvents btn_create_customer As Button
 End Class

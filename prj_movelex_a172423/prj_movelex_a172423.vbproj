@@ -74,10 +74,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_createCustomer_a172423.Designer.vb">
+      <DependentUpon>frm_createCustomer_a172423.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_createCustomer_a172423.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_createProduct_a172423.Designer.vb">
       <DependentUpon>frm_createProduct_a172423.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_createProduct_a172423.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_createStaff_a172423.Designer.vb">
+      <DependentUpon>frm_createStaff_a172423.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_createStaff_a172423.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_customer_a172423.Designer.vb">
@@ -111,10 +123,22 @@
     <Compile Include="frm_staff_a172423.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_viewCustomer_a172423.Designer.vb">
+      <DependentUpon>frm_viewCustomer_a172423.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_viewCustomer_a172423.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_viewProduct_a172423.Designer.vb">
       <DependentUpon>frm_viewProduct_a172423.vb</DependentUpon>
     </Compile>
     <Compile Include="frm_viewProduct_a172423.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_viewStaff_a172423.Designer.vb">
+      <DependentUpon>frm_viewStaff_a172423.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_viewStaff_a172423.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="mod_global_a172423.vb" />
@@ -135,8 +159,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_createCustomer_a172423.resx">
+      <DependentUpon>frm_createCustomer_a172423.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_createProduct_a172423.resx">
       <DependentUpon>frm_createProduct_a172423.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_createStaff_a172423.resx">
+      <DependentUpon>frm_createStaff_a172423.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_customer_a172423.resx">
       <DependentUpon>frm_customer_a172423.vb</DependentUpon>
@@ -153,8 +183,14 @@
     <EmbeddedResource Include="frm_staff_a172423.resx">
       <DependentUpon>frm_staff_a172423.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_viewCustomer_a172423.resx">
+      <DependentUpon>frm_viewCustomer_a172423.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_viewProduct_a172423.resx">
       <DependentUpon>frm_viewProduct_a172423.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_viewStaff_a172423.resx">
+      <DependentUpon>frm_viewStaff_a172423.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

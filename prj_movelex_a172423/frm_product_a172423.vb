@@ -15,7 +15,7 @@
         lbl_total.Text = "Total Product : " & table.Rows.Count() & ""
     End Sub
 
-    Private Sub btn_exit_Click(sender As Object, e As EventArgs) Handles btn_exit.Click
+    Private Sub btn_exit_Click(sender As Object, e As EventArgs)
         End
     End Sub
 

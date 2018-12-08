@@ -61,10 +61,11 @@ Partial Class frm_createProduct_a172423
         'lbl_title
         '
         Me.lbl_title.AutoSize = True
-        Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_title.ForeColor = System.Drawing.Color.White
         Me.lbl_title.Location = New System.Drawing.Point(9, 9)
         Me.lbl_title.Name = "lbl_title"
-        Me.lbl_title.Size = New System.Drawing.Size(329, 38)
+        Me.lbl_title.Size = New System.Drawing.Size(494, 56)
         Me.lbl_title.TabIndex = 0
         Me.lbl_title.Text = "Create New Product"
         '
@@ -72,7 +73,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_name.AutoSize = True
         Me.lbl_name.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_name.Location = New System.Drawing.Point(14, 91)
+        Me.lbl_name.ForeColor = System.Drawing.Color.White
+        Me.lbl_name.Location = New System.Drawing.Point(77, 108)
         Me.lbl_name.Name = "lbl_name"
         Me.lbl_name.Size = New System.Drawing.Size(63, 27)
         Me.lbl_name.TabIndex = 1
@@ -80,7 +82,7 @@ Partial Class frm_createProduct_a172423
         '
         'txt_name
         '
-        Me.txt_name.Location = New System.Drawing.Point(19, 121)
+        Me.txt_name.Location = New System.Drawing.Point(82, 138)
         Me.txt_name.Name = "txt_name"
         Me.txt_name.Size = New System.Drawing.Size(100, 20)
         Me.txt_name.TabIndex = 2
@@ -89,7 +91,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_id.AutoSize = True
         Me.lbl_id.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_id.Location = New System.Drawing.Point(164, 91)
+        Me.lbl_id.ForeColor = System.Drawing.Color.White
+        Me.lbl_id.Location = New System.Drawing.Point(278, 106)
         Me.lbl_id.Name = "lbl_id"
         Me.lbl_id.Size = New System.Drawing.Size(109, 27)
         Me.lbl_id.TabIndex = 3
@@ -97,7 +100,7 @@ Partial Class frm_createProduct_a172423
         '
         'txt_id
         '
-        Me.txt_id.Location = New System.Drawing.Point(202, 121)
+        Me.txt_id.Location = New System.Drawing.Point(316, 136)
         Me.txt_id.Name = "txt_id"
         Me.txt_id.Size = New System.Drawing.Size(67, 20)
         Me.txt_id.TabIndex = 4
@@ -106,7 +109,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_price.AutoSize = True
         Me.lbl_price.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_price.Location = New System.Drawing.Point(320, 91)
+        Me.lbl_price.ForeColor = System.Drawing.Color.White
+        Me.lbl_price.Location = New System.Drawing.Point(74, 284)
         Me.lbl_price.Name = "lbl_price"
         Me.lbl_price.Size = New System.Drawing.Size(59, 27)
         Me.lbl_price.TabIndex = 5
@@ -114,7 +118,7 @@ Partial Class frm_createProduct_a172423
         '
         'txt_price
         '
-        Me.txt_price.Location = New System.Drawing.Point(325, 119)
+        Me.txt_price.Location = New System.Drawing.Point(79, 312)
         Me.txt_price.Name = "txt_price"
         Me.txt_price.Size = New System.Drawing.Size(100, 20)
         Me.txt_price.TabIndex = 6
@@ -123,7 +127,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(164, 209)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(278, 199)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(91, 27)
         Me.Label1.TabIndex = 7
@@ -131,7 +136,7 @@ Partial Class frm_createProduct_a172423
         '
         'txt_quantity
         '
-        Me.txt_quantity.Location = New System.Drawing.Point(169, 237)
+        Me.txt_quantity.Location = New System.Drawing.Point(283, 227)
         Me.txt_quantity.Name = "txt_quantity"
         Me.txt_quantity.Size = New System.Drawing.Size(100, 20)
         Me.txt_quantity.TabIndex = 8
@@ -140,7 +145,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_type.AutoSize = True
         Me.lbl_type.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_type.Location = New System.Drawing.Point(11, 319)
+        Me.lbl_type.ForeColor = System.Drawing.Color.White
+        Me.lbl_type.Location = New System.Drawing.Point(281, 375)
         Me.lbl_type.Name = "lbl_type"
         Me.lbl_type.Size = New System.Drawing.Size(55, 27)
         Me.lbl_type.TabIndex = 9
@@ -149,7 +155,8 @@ Partial Class frm_createProduct_a172423
         'rb_desk_clock
         '
         Me.rb_desk_clock.AutoSize = True
-        Me.rb_desk_clock.Location = New System.Drawing.Point(16, 354)
+        Me.rb_desk_clock.ForeColor = System.Drawing.Color.White
+        Me.rb_desk_clock.Location = New System.Drawing.Point(286, 410)
         Me.rb_desk_clock.Name = "rb_desk_clock"
         Me.rb_desk_clock.Size = New System.Drawing.Size(80, 17)
         Me.rb_desk_clock.TabIndex = 10
@@ -160,7 +167,8 @@ Partial Class frm_createProduct_a172423
         'rb_radio
         '
         Me.rb_radio.AutoSize = True
-        Me.rb_radio.Location = New System.Drawing.Point(16, 377)
+        Me.rb_radio.ForeColor = System.Drawing.Color.White
+        Me.rb_radio.Location = New System.Drawing.Point(286, 433)
         Me.rb_radio.Name = "rb_radio"
         Me.rb_radio.Size = New System.Drawing.Size(53, 17)
         Me.rb_radio.TabIndex = 11
@@ -171,7 +179,8 @@ Partial Class frm_createProduct_a172423
         'rb_clockRadio
         '
         Me.rb_clockRadio.AutoSize = True
-        Me.rb_clockRadio.Location = New System.Drawing.Point(16, 400)
+        Me.rb_clockRadio.ForeColor = System.Drawing.Color.White
+        Me.rb_clockRadio.Location = New System.Drawing.Point(286, 456)
         Me.rb_clockRadio.Name = "rb_clockRadio"
         Me.rb_clockRadio.Size = New System.Drawing.Size(83, 17)
         Me.rb_clockRadio.TabIndex = 12
@@ -183,7 +192,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_material.AutoSize = True
         Me.lbl_material.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_material.Location = New System.Drawing.Point(16, 209)
+        Me.lbl_material.ForeColor = System.Drawing.Color.White
+        Me.lbl_material.Location = New System.Drawing.Point(79, 201)
         Me.lbl_material.Name = "lbl_material"
         Me.lbl_material.Size = New System.Drawing.Size(89, 27)
         Me.lbl_material.TabIndex = 13
@@ -191,7 +201,7 @@ Partial Class frm_createProduct_a172423
         '
         'txt_material
         '
-        Me.txt_material.Location = New System.Drawing.Point(19, 237)
+        Me.txt_material.Location = New System.Drawing.Point(82, 229)
         Me.txt_material.Name = "txt_material"
         Me.txt_material.Size = New System.Drawing.Size(100, 20)
         Me.txt_material.TabIndex = 14
@@ -200,7 +210,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_battery.AutoSize = True
         Me.lbl_battery.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_battery.Location = New System.Drawing.Point(320, 209)
+        Me.lbl_battery.ForeColor = System.Drawing.Color.White
+        Me.lbl_battery.Location = New System.Drawing.Point(278, 282)
         Me.lbl_battery.Name = "lbl_battery"
         Me.lbl_battery.Size = New System.Drawing.Size(144, 27)
         Me.lbl_battery.TabIndex = 15
@@ -208,14 +219,14 @@ Partial Class frm_createProduct_a172423
         '
         'txt_battery
         '
-        Me.txt_battery.Location = New System.Drawing.Point(325, 237)
+        Me.txt_battery.Location = New System.Drawing.Point(283, 310)
         Me.txt_battery.Name = "txt_battery"
         Me.txt_battery.Size = New System.Drawing.Size(100, 20)
         Me.txt_battery.TabIndex = 16
         '
         'btn_browseImage
         '
-        Me.btn_browseImage.Location = New System.Drawing.Point(188, 394)
+        Me.btn_browseImage.Location = New System.Drawing.Point(79, 555)
         Me.btn_browseImage.Name = "btn_browseImage"
         Me.btn_browseImage.Size = New System.Drawing.Size(75, 23)
         Me.btn_browseImage.TabIndex = 17
@@ -226,7 +237,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_image.AutoSize = True
         Me.lbl_image.Font = New System.Drawing.Font("Trebuchet MS", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_image.Location = New System.Drawing.Point(183, 319)
+        Me.lbl_image.ForeColor = System.Drawing.Color.White
+        Me.lbl_image.Location = New System.Drawing.Point(74, 375)
         Me.lbl_image.Name = "lbl_image"
         Me.lbl_image.Size = New System.Drawing.Size(67, 27)
         Me.lbl_image.TabIndex = 18
@@ -238,7 +250,7 @@ Partial Class frm_createProduct_a172423
         '
         'product_image
         '
-        Me.product_image.Location = New System.Drawing.Point(287, 319)
+        Me.product_image.Location = New System.Drawing.Point(79, 410)
         Me.product_image.Name = "product_image"
         Me.product_image.Size = New System.Drawing.Size(143, 112)
         Me.product_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -249,7 +261,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.btn_cancel.BackColor = System.Drawing.Color.Red
         Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancel.Location = New System.Drawing.Point(78, 495)
+        Me.btn_cancel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancel.Location = New System.Drawing.Point(98, 635)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
         Me.btn_cancel.TabIndex = 20
@@ -260,7 +273,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.btn_create.BackColor = System.Drawing.Color.MediumSpringGreen
         Me.btn_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_create.Location = New System.Drawing.Point(304, 495)
+        Me.btn_create.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_create.Location = New System.Drawing.Point(291, 635)
         Me.btn_create.Name = "btn_create"
         Me.btn_create.Size = New System.Drawing.Size(75, 23)
         Me.btn_create.TabIndex = 21
@@ -272,7 +286,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_name.AutoSize = True
         Me.lbl_error_name.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_name.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_name.Location = New System.Drawing.Point(16, 144)
+        Me.lbl_error_name.Location = New System.Drawing.Point(79, 161)
         Me.lbl_error_name.Name = "lbl_error_name"
         Me.lbl_error_name.Size = New System.Drawing.Size(98, 16)
         Me.lbl_error_name.TabIndex = 22
@@ -284,7 +298,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_id.AutoSize = True
         Me.lbl_error_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_id.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_id.Location = New System.Drawing.Point(166, 146)
+        Me.lbl_error_id.Location = New System.Drawing.Point(280, 161)
         Me.lbl_error_id.Name = "lbl_error_id"
         Me.lbl_error_id.Size = New System.Drawing.Size(75, 16)
         Me.lbl_error_id.TabIndex = 23
@@ -297,7 +311,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_price.BackColor = System.Drawing.Color.BlueViolet
         Me.lbl_error_price.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_price.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_price.Location = New System.Drawing.Point(325, 146)
+        Me.lbl_error_price.Location = New System.Drawing.Point(79, 339)
         Me.lbl_error_price.Name = "lbl_error_price"
         Me.lbl_error_price.Size = New System.Drawing.Size(94, 16)
         Me.lbl_error_price.TabIndex = 24
@@ -309,7 +323,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_quantity.AutoSize = True
         Me.lbl_error_quantity.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_quantity.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_quantity.Location = New System.Drawing.Point(169, 264)
+        Me.lbl_error_quantity.Location = New System.Drawing.Point(283, 254)
         Me.lbl_error_quantity.Name = "lbl_error_quantity"
         Me.lbl_error_quantity.Size = New System.Drawing.Size(110, 16)
         Me.lbl_error_quantity.TabIndex = 25
@@ -321,7 +335,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_type.AutoSize = True
         Me.lbl_error_type.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_type.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_type.Location = New System.Drawing.Point(16, 424)
+        Me.lbl_error_type.Location = New System.Drawing.Point(286, 480)
         Me.lbl_error_type.Name = "lbl_error_type"
         Me.lbl_error_type.Size = New System.Drawing.Size(90, 16)
         Me.lbl_error_type.TabIndex = 26
@@ -333,7 +347,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_material.AutoSize = True
         Me.lbl_error_material.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_material.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_material.Location = New System.Drawing.Point(19, 264)
+        Me.lbl_error_material.Location = New System.Drawing.Point(82, 256)
         Me.lbl_error_material.Name = "lbl_error_material"
         Me.lbl_error_material.Size = New System.Drawing.Size(112, 16)
         Me.lbl_error_material.TabIndex = 27
@@ -345,7 +359,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_battery.AutoSize = True
         Me.lbl_error_battery.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_battery.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_battery.Location = New System.Drawing.Point(325, 264)
+        Me.lbl_error_battery.Location = New System.Drawing.Point(283, 337)
         Me.lbl_error_battery.Name = "lbl_error_battery"
         Me.lbl_error_battery.Size = New System.Drawing.Size(105, 16)
         Me.lbl_error_battery.TabIndex = 28
@@ -357,7 +371,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_image.AutoSize = True
         Me.lbl_error_image.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_error_image.ForeColor = System.Drawing.Color.Tomato
-        Me.lbl_error_image.Location = New System.Drawing.Point(284, 445)
+        Me.lbl_error_image.Location = New System.Drawing.Point(76, 525)
         Me.lbl_error_image.Name = "lbl_error_image"
         Me.lbl_error_image.Size = New System.Drawing.Size(102, 16)
         Me.lbl_error_image.TabIndex = 29
@@ -367,7 +381,7 @@ Partial Class frm_createProduct_a172423
         'lbl_filename_image
         '
         Me.lbl_filename_image.AutoSize = True
-        Me.lbl_filename_image.Location = New System.Drawing.Point(229, 500)
+        Me.lbl_filename_image.Location = New System.Drawing.Point(249, 640)
         Me.lbl_filename_image.Name = "lbl_filename_image"
         Me.lbl_filename_image.Size = New System.Drawing.Size(0, 13)
         Me.lbl_filename_image.TabIndex = 30
@@ -377,7 +391,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.lbl_prd.AutoSize = True
         Me.lbl_prd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_prd.Location = New System.Drawing.Point(166, 123)
+        Me.lbl_prd.ForeColor = System.Drawing.Color.White
+        Me.lbl_prd.Location = New System.Drawing.Point(280, 138)
         Me.lbl_prd.Name = "lbl_prd"
         Me.lbl_prd.Size = New System.Drawing.Size(37, 16)
         Me.lbl_prd.TabIndex = 31
@@ -387,8 +402,8 @@ Partial Class frm_createProduct_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(468, 539)
+        Me.BackColor = System.Drawing.Color.Black
+        Me.ClientSize = New System.Drawing.Size(524, 670)
         Me.Controls.Add(Me.lbl_prd)
         Me.Controls.Add(Me.lbl_filename_image)
         Me.Controls.Add(Me.lbl_error_image)

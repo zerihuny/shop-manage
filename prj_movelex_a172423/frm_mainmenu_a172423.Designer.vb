@@ -45,7 +45,7 @@ Partial Class frm_mainmenu_a172423
         '
         Me.lbl_title.AutoSize = True
         Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lbl_title.ForeColor = System.Drawing.Color.White
         Me.lbl_title.Location = New System.Drawing.Point(12, 9)
         Me.lbl_title.Name = "lbl_title"
         Me.lbl_title.Size = New System.Drawing.Size(235, 56)
@@ -54,10 +54,11 @@ Partial Class frm_mainmenu_a172423
         '
         'btn_customer
         '
-        Me.btn_customer.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_customer.BackColor = System.Drawing.Color.Black
         Me.btn_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_customer.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_customer.Location = New System.Drawing.Point(149, 293)
+        Me.btn_customer.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_customer.ForeColor = System.Drawing.Color.White
+        Me.btn_customer.Location = New System.Drawing.Point(182, 280)
         Me.btn_customer.Name = "btn_customer"
         Me.btn_customer.Size = New System.Drawing.Size(85, 23)
         Me.btn_customer.TabIndex = 1
@@ -66,10 +67,11 @@ Partial Class frm_mainmenu_a172423
         '
         'btn_order
         '
-        Me.btn_order.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_order.BackColor = System.Drawing.Color.Black
         Me.btn_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_order.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_order.Location = New System.Drawing.Point(500, 160)
+        Me.btn_order.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_order.ForeColor = System.Drawing.Color.White
+        Me.btn_order.Location = New System.Drawing.Point(438, 171)
         Me.btn_order.Name = "btn_order"
         Me.btn_order.Size = New System.Drawing.Size(75, 23)
         Me.btn_order.TabIndex = 2
@@ -78,10 +80,11 @@ Partial Class frm_mainmenu_a172423
         '
         'btn_product
         '
-        Me.btn_product.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_product.BackColor = System.Drawing.Color.Black
         Me.btn_product.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_product.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_product.Location = New System.Drawing.Point(500, 293)
+        Me.btn_product.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_product.ForeColor = System.Drawing.Color.White
+        Me.btn_product.Location = New System.Drawing.Point(438, 280)
         Me.btn_product.Name = "btn_product"
         Me.btn_product.Size = New System.Drawing.Size(75, 23)
         Me.btn_product.TabIndex = 3
@@ -90,10 +93,11 @@ Partial Class frm_mainmenu_a172423
         '
         'btn_staff
         '
-        Me.btn_staff.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_staff.BackColor = System.Drawing.Color.Black
         Me.btn_staff.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_staff.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_staff.Location = New System.Drawing.Point(149, 160)
+        Me.btn_staff.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_staff.ForeColor = System.Drawing.Color.White
+        Me.btn_staff.Location = New System.Drawing.Point(183, 171)
         Me.btn_staff.Name = "btn_staff"
         Me.btn_staff.Size = New System.Drawing.Size(75, 23)
         Me.btn_staff.TabIndex = 4
@@ -105,7 +109,7 @@ Partial Class frm_mainmenu_a172423
         Me.btn_exit.BackColor = System.Drawing.Color.OrangeRed
         Me.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_exit.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_exit.Location = New System.Drawing.Point(529, 388)
+        Me.btn_exit.Location = New System.Drawing.Point(516, 40)
         Me.btn_exit.Name = "btn_exit"
         Me.btn_exit.Size = New System.Drawing.Size(75, 23)
         Me.btn_exit.TabIndex = 5
@@ -116,7 +120,8 @@ Partial Class frm_mainmenu_a172423
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(58, 65)
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(19, 65)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(134, 17)
         Me.Label1.TabIndex = 6
@@ -124,8 +129,9 @@ Partial Class frm_mainmenu_a172423
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.SpringGreen
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(21, 120)
+        Me.PictureBox1.Location = New System.Drawing.Point(55, 131)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(232, 100)
         Me.PictureBox1.TabIndex = 7
@@ -133,17 +139,19 @@ Partial Class frm_mainmenu_a172423
         '
         'PictureBox2
         '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Red
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(21, 250)
+        Me.PictureBox2.Location = New System.Drawing.Point(55, 237)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(232, 103)
+        Me.PictureBox2.Size = New System.Drawing.Size(231, 103)
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
         '
         'PictureBox3
         '
+        Me.PictureBox3.BackColor = System.Drawing.Color.BlueViolet
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(355, 120)
+        Me.PictureBox3.Location = New System.Drawing.Point(293, 131)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(249, 100)
         Me.PictureBox3.TabIndex = 9
@@ -151,8 +159,9 @@ Partial Class frm_mainmenu_a172423
         '
         'PictureBox4
         '
+        Me.PictureBox4.BackColor = System.Drawing.Color.DodgerBlue
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(355, 250)
+        Me.PictureBox4.Location = New System.Drawing.Point(293, 237)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(249, 103)
         Me.PictureBox4.TabIndex = 10
@@ -171,8 +180,8 @@ Partial Class frm_mainmenu_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(630, 436)
+        Me.BackColor = System.Drawing.Color.Black
+        Me.ClientSize = New System.Drawing.Size(615, 391)
         Me.Controls.Add(Me.lbl_date)
         Me.Controls.Add(Me.btn_product)
         Me.Controls.Add(Me.PictureBox4)
