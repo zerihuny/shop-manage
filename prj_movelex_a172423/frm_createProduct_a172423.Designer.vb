@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_createProduct_a172423
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frm_createProduct_a172423
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lbl_title = New System.Windows.Forms.Label()
         Me.lbl_name = New System.Windows.Forms.Label()
@@ -54,6 +54,7 @@ Partial Class frm_createProduct_a172423
         Me.lbl_error_battery = New System.Windows.Forms.Label()
         Me.lbl_error_image = New System.Windows.Forms.Label()
         Me.lbl_filename_image = New System.Windows.Forms.Label()
+        Me.lbl_prd = New System.Windows.Forms.Label()
         CType(Me.product_image, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -96,9 +97,9 @@ Partial Class frm_createProduct_a172423
         '
         'txt_id
         '
-        Me.txt_id.Location = New System.Drawing.Point(169, 121)
+        Me.txt_id.Location = New System.Drawing.Point(202, 121)
         Me.txt_id.Name = "txt_id"
-        Me.txt_id.Size = New System.Drawing.Size(100, 20)
+        Me.txt_id.Size = New System.Drawing.Size(67, 20)
         Me.txt_id.TabIndex = 4
         '
         'lbl_price
@@ -372,12 +373,23 @@ Partial Class frm_createProduct_a172423
         Me.lbl_filename_image.TabIndex = 30
         Me.lbl_filename_image.Visible = False
         '
+        'lbl_prd
+        '
+        Me.lbl_prd.AutoSize = True
+        Me.lbl_prd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_prd.Location = New System.Drawing.Point(166, 123)
+        Me.lbl_prd.Name = "lbl_prd"
+        Me.lbl_prd.Size = New System.Drawing.Size(37, 16)
+        Me.lbl_prd.TabIndex = 31
+        Me.lbl_prd.Text = "PRD"
+        '
         'frm_createProduct_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlueViolet
         Me.ClientSize = New System.Drawing.Size(468, 539)
+        Me.Controls.Add(Me.lbl_prd)
         Me.Controls.Add(Me.lbl_filename_image)
         Me.Controls.Add(Me.lbl_error_image)
         Me.Controls.Add(Me.lbl_error_battery)
@@ -450,4 +462,5 @@ Partial Class frm_createProduct_a172423
     Friend WithEvents lbl_error_battery As Label
     Friend WithEvents lbl_error_image As Label
     Friend WithEvents lbl_filename_image As Label
+    Friend WithEvents lbl_prd As Label
 End Class

@@ -1,6 +1,5 @@
 ﻿Public Class frm_createProduct_a172423
     Private Sub frm_createProduct_a172423_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 
     Private Sub btn_browseImage_Click(sender As Object, e As EventArgs) Handles btn_browseImage.Click
@@ -13,7 +12,8 @@
 
         Try
             lbl_error_image.Visible = False
-            product_image.BackgroundImage = Image.FromFile(OpenFileDialog1.FileName)
+            product_image.ImageLocation = OpenFileDialog1.FileName
+            product_image.SizeMode = PictureBoxSizeMode.StretchImage
             lbl_filename_image.Text = OpenFileDialog1.FileName
         Catch ex As Exception
             If String.IsNullOrEmpty(lbl_filename_image.Text) Then
@@ -48,6 +48,10 @@
         If String.IsNullOrEmpty(txt_id.Text) Then
             lbl_error_id.Visible = True
             lbl_error_id.Text = "Enter product id!"
+            checkInput = False
+        ElseIf IsNumeric(txt_id.Text) = False Then
+            lbl_error_id.Visible = True
+            lbl_error_id.Text = "Number only!"
             checkInput = False
         Else
             lbl_error_id.Visible = False
@@ -127,7 +131,10 @@
             'save query
             Try
 
-                Dim mysql As String = "INSERT INTO TBL_PRODUCT_A172423 VALUES ('" & txt_id.Text & "','" & txt_name.Text & "','" & txt_price.Text & "','" & txt_quantity.Text & "','" & product_type & "','" & txt_material.Text & "','" & txt_battery.Text & "','" & OpenFileDialog1.FileName & "','" & today & "','" & today & "' )"
+                Dim mysql As String = "INSERT INTO TBL_PRODUCT_A172423 VALUES ('" & "PRD" + txt_id.Text & "','" & txt_name.Text & "','" & txt_price.Text & "','" & txt_quantity.Text & "','" & product_type & "','" & txt_material.Text & "','" & txt_battery.Text & "','" & txt_id.Text + ".jpg" & "','" & today & "','" & today & "' )"
+                Dim saveImage As New Bitmap(product_image.Image)
+                saveImage.Save("pictures/" + txt_id.Text + ".jpg")
+                saveImage.Dispose()
                 Dim save As New OleDb.OleDbCommand(mysql, myconnection2)
 
                 'close again if error accour

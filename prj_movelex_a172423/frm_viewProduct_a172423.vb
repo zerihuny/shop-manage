@@ -34,7 +34,13 @@
 
     Private Sub btn_delete_Click(sender As Object, e As EventArgs) Handles btn_delete.Click
 
+        Dim mysql As String = "SELECT * FROM TBL_PRODUCT_A172423 WHERE FLD_PRODUCT_ID='" & product_id & "'"
+        Dim table As New DataTable
+        Dim reader As New OleDb.OleDbDataAdapter(mysql, connection)
+        reader.Fill(table)
+
         Dim delete_confirmation = MsgBox("Are you sure you would like to delete this product?", MsgBoxStyle.YesNoCancel)
+        My.Computer.FileSystem.DeleteFile("pictures/" + table.Rows(0).Item(7))
 
         If delete_confirmation = MsgBoxResult.Yes Then
 
@@ -115,6 +121,54 @@
             lbl_error_image.Visible = False
         End If
 
+        'load table
+        Dim mysql As String = "SELECT * FROM TBL_PRODUCT_A172423 WHERE FLD_PRODUCT_ID='" & product_id & "'"
+        Dim table As New DataTable
+        Dim reader As New OleDb.OleDbDataAdapter(mysql, connection)
+        reader.Fill(table)
+
+        If checkInput = True Then
+            Try
+                'name
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_NAME='" & txt_name.Text & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'price
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_PRICE='" & txt_price.Text & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'quantity
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_QUANTITY='" & txt_quantity.Text & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'type
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_TYPE='" & cmb_type.Text & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'material
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_MATERIAL='" & txt_material.Text & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'battery
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_BATTERY='" & txt_battery.Text & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'updated_at
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_CREATED_AT='" & today & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'created_at
+                run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_UPDATED_AT='" & txt_created_at.Text & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                'image
+                If (lbl_filename_image.Text = "") Then
+                    run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_IMAGE='" & table.Rows(0).Item(7) & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                Else
+                    My.Computer.FileSystem.DeleteFile("pictures/" + table.Rows(0).Item(7))
+                    Dim saveImage As New Bitmap(pic_product.Image)
+                    saveImage.Save("pictures/" + table.Rows(0).Item(7))
+                    saveImage.Dispose()
+                    run_sql_command("UPDATE TBL_PRODUCT_A172423 SET FLD_PRODUCT_IMAGE='" & table.Rows(0).Item(7) & "' WHERE FLD_PRODUCT_ID='" & product_id & "'")
+                End If
+
+                Dim reopen As New frm_viewProduct_a172423
+                Me.Close()
+                reopen.Show()
+                Beep()
+                MsgBox("Your change has been save!")
+            Catch ex As Exception
+                Dim reopen As New frm_viewProduct_a172423
+                Me.Close()
+                reopen.Show()
+
+                MsgBox("Opps! this is so embarrassing, an error has occur. " & ex.Message)
+            End Try
+        End If
 
     End Sub
 
@@ -128,7 +182,8 @@
 
         Try
             lbl_error_image.Visible = False
-            pic_product.BackgroundImage = Image.FromFile(OpenFileDialog1.FileName)
+            pic_product.ImageLocation = OpenFileDialog1.FileName
+            pic_product.SizeMode = PictureBoxSizeMode.StretchImage
             lbl_filename_image.Text = OpenFileDialog1.FileName
         Catch ex As Exception
             If String.IsNullOrEmpty(lbl_filename_image.Text) Then

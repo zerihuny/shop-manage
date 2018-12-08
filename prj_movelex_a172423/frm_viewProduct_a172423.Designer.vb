@@ -338,6 +338,7 @@ Partial Class frm_viewProduct_a172423
         Me.lbl_filename_image.Size = New System.Drawing.Size(68, 13)
         Me.lbl_filename_image.TabIndex = 33
         Me.lbl_filename_image.Text = "picture name"
+        Me.lbl_filename_image.Visible = False
         '
         'lbl_error_image
         '

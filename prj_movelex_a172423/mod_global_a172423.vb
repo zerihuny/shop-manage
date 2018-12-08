@@ -17,6 +17,7 @@
 
         Try
 
+            command.Connection.Close()
             command.Connection.Open()
             command.ExecuteNonQuery()
             command.Connection.Close()
