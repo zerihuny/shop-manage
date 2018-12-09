@@ -61,7 +61,8 @@ Partial Class frm_viewProduct_a172423
         '
         Me.lbl_title.AutoSize = True
         Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_title.Location = New System.Drawing.Point(357, 9)
+        Me.lbl_title.ForeColor = System.Drawing.Color.White
+        Me.lbl_title.Location = New System.Drawing.Point(5, 9)
         Me.lbl_title.Name = "lbl_title"
         Me.lbl_title.Size = New System.Drawing.Size(203, 56)
         Me.lbl_title.TabIndex = 0
@@ -78,72 +79,88 @@ Partial Class frm_viewProduct_a172423
         'lbl_product_name
         '
         Me.lbl_product_name.AutoSize = True
+        Me.lbl_product_name.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_product_name.ForeColor = System.Drawing.Color.White
         Me.lbl_product_name.Location = New System.Drawing.Point(308, 122)
         Me.lbl_product_name.Name = "lbl_product_name"
-        Me.lbl_product_name.Size = New System.Drawing.Size(35, 13)
+        Me.lbl_product_name.Size = New System.Drawing.Size(47, 16)
         Me.lbl_product_name.TabIndex = 2
         Me.lbl_product_name.Text = "Name"
         '
         'lbl_price
         '
         Me.lbl_price.AutoSize = True
+        Me.lbl_price.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_price.ForeColor = System.Drawing.Color.White
         Me.lbl_price.Location = New System.Drawing.Point(622, 122)
         Me.lbl_price.Name = "lbl_price"
-        Me.lbl_price.Size = New System.Drawing.Size(31, 13)
+        Me.lbl_price.Size = New System.Drawing.Size(40, 16)
         Me.lbl_price.TabIndex = 3
         Me.lbl_price.Text = "Price"
         '
         'lbl_battery
         '
         Me.lbl_battery.AutoSize = True
-        Me.lbl_battery.Location = New System.Drawing.Point(622, 216)
+        Me.lbl_battery.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_battery.ForeColor = System.Drawing.Color.White
+        Me.lbl_battery.Location = New System.Drawing.Point(605, 216)
         Me.lbl_battery.Name = "lbl_battery"
-        Me.lbl_battery.Size = New System.Drawing.Size(74, 13)
+        Me.lbl_battery.Size = New System.Drawing.Size(94, 16)
         Me.lbl_battery.TabIndex = 4
         Me.lbl_battery.Text = "Power Source"
         '
         'lbl_quantity
         '
         Me.lbl_quantity.AutoSize = True
+        Me.lbl_quantity.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_quantity.ForeColor = System.Drawing.Color.White
         Me.lbl_quantity.Location = New System.Drawing.Point(308, 168)
         Me.lbl_quantity.Name = "lbl_quantity"
-        Me.lbl_quantity.Size = New System.Drawing.Size(46, 13)
+        Me.lbl_quantity.Size = New System.Drawing.Size(64, 16)
         Me.lbl_quantity.TabIndex = 5
         Me.lbl_quantity.Text = "Quantity"
         '
         'lbl_type
         '
         Me.lbl_type.AutoSize = True
+        Me.lbl_type.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_type.ForeColor = System.Drawing.Color.White
         Me.lbl_type.Location = New System.Drawing.Point(622, 168)
         Me.lbl_type.Name = "lbl_type"
-        Me.lbl_type.Size = New System.Drawing.Size(31, 13)
+        Me.lbl_type.Size = New System.Drawing.Size(39, 16)
         Me.lbl_type.TabIndex = 6
         Me.lbl_type.Text = "Type"
         '
         'lbl_material
         '
         Me.lbl_material.AutoSize = True
+        Me.lbl_material.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_material.ForeColor = System.Drawing.Color.White
         Me.lbl_material.Location = New System.Drawing.Point(308, 216)
         Me.lbl_material.Name = "lbl_material"
-        Me.lbl_material.Size = New System.Drawing.Size(44, 13)
+        Me.lbl_material.Size = New System.Drawing.Size(63, 16)
         Me.lbl_material.TabIndex = 7
         Me.lbl_material.Text = "Material"
         '
         'lbl_createdAt
         '
         Me.lbl_createdAt.AutoSize = True
-        Me.lbl_createdAt.Location = New System.Drawing.Point(308, 261)
+        Me.lbl_createdAt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_createdAt.ForeColor = System.Drawing.Color.White
+        Me.lbl_createdAt.Location = New System.Drawing.Point(296, 261)
         Me.lbl_createdAt.Name = "lbl_createdAt"
-        Me.lbl_createdAt.Size = New System.Drawing.Size(57, 13)
+        Me.lbl_createdAt.Size = New System.Drawing.Size(79, 16)
         Me.lbl_createdAt.TabIndex = 8
         Me.lbl_createdAt.Text = "Created At"
         '
         'lbl_updatedAt
         '
         Me.lbl_updatedAt.AutoSize = True
-        Me.lbl_updatedAt.Location = New System.Drawing.Point(622, 261)
+        Me.lbl_updatedAt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_updatedAt.ForeColor = System.Drawing.Color.White
+        Me.lbl_updatedAt.Location = New System.Drawing.Point(614, 261)
         Me.lbl_updatedAt.Name = "lbl_updatedAt"
-        Me.lbl_updatedAt.Size = New System.Drawing.Size(61, 13)
+        Me.lbl_updatedAt.Size = New System.Drawing.Size(82, 16)
         Me.lbl_updatedAt.TabIndex = 9
         Me.lbl_updatedAt.Text = "Updated At"
         '
@@ -193,10 +210,10 @@ Partial Class frm_viewProduct_a172423
         '
         'btn_back
         '
-        Me.btn_back.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btn_back.BackColor = System.Drawing.Color.Yellow
         Me.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_back.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_back.Location = New System.Drawing.Point(599, 352)
+        Me.btn_back.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_back.Location = New System.Drawing.Point(279, 352)
         Me.btn_back.Name = "btn_back"
         Me.btn_back.Size = New System.Drawing.Size(75, 23)
         Me.btn_back.TabIndex = 20
@@ -207,7 +224,8 @@ Partial Class frm_viewProduct_a172423
         '
         Me.btn_update.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_update.Location = New System.Drawing.Point(423, 352)
+        Me.btn_update.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_update.Location = New System.Drawing.Point(608, 352)
         Me.btn_update.Name = "btn_update"
         Me.btn_update.Size = New System.Drawing.Size(75, 23)
         Me.btn_update.TabIndex = 21
@@ -216,10 +234,10 @@ Partial Class frm_viewProduct_a172423
         '
         'btn_delete
         '
-        Me.btn_delete.BackColor = System.Drawing.Color.Crimson
+        Me.btn_delete.BackColor = System.Drawing.Color.Red
         Me.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_delete.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_delete.Location = New System.Drawing.Point(259, 352)
+        Me.btn_delete.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_delete.Location = New System.Drawing.Point(444, 352)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(75, 23)
         Me.btn_delete.TabIndex = 19
@@ -319,12 +337,15 @@ Partial Class frm_viewProduct_a172423
         '
         'btn_browse
         '
+        Me.btn_browse.BackColor = System.Drawing.Color.White
+        Me.btn_browse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_browse.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_browse.Location = New System.Drawing.Point(33, 284)
         Me.btn_browse.Name = "btn_browse"
         Me.btn_browse.Size = New System.Drawing.Size(75, 23)
         Me.btn_browse.TabIndex = 32
         Me.btn_browse.Text = "Browse"
-        Me.btn_browse.UseVisualStyleBackColor = True
+        Me.btn_browse.UseVisualStyleBackColor = False
         '
         'OpenFileDialog1
         '
@@ -355,7 +376,7 @@ Partial Class frm_viewProduct_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.BlueViolet
+        Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(930, 407)
         Me.Controls.Add(Me.lbl_error_image)
         Me.Controls.Add(Me.lbl_filename_image)

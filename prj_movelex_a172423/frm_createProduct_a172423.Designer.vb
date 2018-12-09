@@ -259,7 +259,7 @@ Partial Class frm_createProduct_a172423
         '
         'btn_cancel
         '
-        Me.btn_cancel.BackColor = System.Drawing.Color.Red
+        Me.btn_cancel.BackColor = System.Drawing.Color.Yellow
         Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_cancel.Location = New System.Drawing.Point(98, 635)

@@ -23,7 +23,6 @@ Partial Class frm_orders_a172423
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lbl_title = New System.Windows.Forms.Label()
-        Me.btn_exit = New System.Windows.Forms.Button()
         Me.btn_home = New System.Windows.Forms.Button()
         Me.grd_order = New System.Windows.Forms.DataGridView()
         Me.lbl_total = New System.Windows.Forms.Label()
@@ -33,30 +32,20 @@ Partial Class frm_orders_a172423
         'lbl_title
         '
         Me.lbl_title.AutoSize = True
-        Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_title.Location = New System.Drawing.Point(336, 42)
+        Me.lbl_title.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_title.ForeColor = System.Drawing.Color.White
+        Me.lbl_title.Location = New System.Drawing.Point(12, 9)
         Me.lbl_title.Name = "lbl_title"
-        Me.lbl_title.Size = New System.Drawing.Size(105, 38)
+        Me.lbl_title.Size = New System.Drawing.Size(157, 56)
         Me.lbl_title.TabIndex = 0
         Me.lbl_title.Text = "Order"
-        '
-        'btn_exit
-        '
-        Me.btn_exit.BackColor = System.Drawing.Color.OrangeRed
-        Me.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_exit.Location = New System.Drawing.Point(233, 377)
-        Me.btn_exit.Name = "btn_exit"
-        Me.btn_exit.Size = New System.Drawing.Size(75, 23)
-        Me.btn_exit.TabIndex = 1
-        Me.btn_exit.Text = "Exit"
-        Me.btn_exit.UseVisualStyleBackColor = False
         '
         'btn_home
         '
         Me.btn_home.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_home.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_home.Location = New System.Drawing.Point(454, 377)
+        Me.btn_home.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_home.Location = New System.Drawing.Point(650, 42)
         Me.btn_home.Name = "btn_home"
         Me.btn_home.Size = New System.Drawing.Size(75, 23)
         Me.btn_home.TabIndex = 2
@@ -66,7 +55,7 @@ Partial Class frm_orders_a172423
         'grd_order
         '
         Me.grd_order.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.grd_order.Location = New System.Drawing.Point(68, 96)
+        Me.grd_order.Location = New System.Drawing.Point(49, 82)
         Me.grd_order.Name = "grd_order"
         Me.grd_order.Size = New System.Drawing.Size(657, 249)
         Me.grd_order.TabIndex = 3
@@ -76,7 +65,7 @@ Partial Class frm_orders_a172423
         Me.lbl_total.AutoSize = True
         Me.lbl_total.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_total.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.lbl_total.Location = New System.Drawing.Point(65, 348)
+        Me.lbl_total.Location = New System.Drawing.Point(46, 334)
         Me.lbl_total.Name = "lbl_total"
         Me.lbl_total.Size = New System.Drawing.Size(49, 16)
         Me.lbl_total.TabIndex = 4
@@ -86,12 +75,11 @@ Partial Class frm_orders_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.Black
+        Me.ClientSize = New System.Drawing.Size(748, 370)
         Me.Controls.Add(Me.lbl_total)
         Me.Controls.Add(Me.grd_order)
         Me.Controls.Add(Me.btn_home)
-        Me.Controls.Add(Me.btn_exit)
         Me.Controls.Add(Me.lbl_title)
         Me.Name = "frm_orders_a172423"
         Me.Text = "Orders"
@@ -102,7 +90,6 @@ Partial Class frm_orders_a172423
     End Sub
 
     Friend WithEvents lbl_title As Label
-    Friend WithEvents btn_exit As Button
     Friend WithEvents btn_home As Button
     Friend WithEvents grd_order As DataGridView
     Friend WithEvents lbl_total As Label
