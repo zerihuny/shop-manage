@@ -75,7 +75,7 @@ Partial Class frm_createStaff_a172423
         Me.lbl_id.AutoSize = True
         Me.lbl_id.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_id.ForeColor = System.Drawing.Color.White
-        Me.lbl_id.Location = New System.Drawing.Point(216, 134)
+        Me.lbl_id.Location = New System.Drawing.Point(200, 134)
         Me.lbl_id.Name = "lbl_id"
         Me.lbl_id.Size = New System.Drawing.Size(21, 16)
         Me.lbl_id.TabIndex = 3
@@ -86,7 +86,7 @@ Partial Class frm_createStaff_a172423
         Me.lbl_gender.AutoSize = True
         Me.lbl_gender.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_gender.ForeColor = System.Drawing.Color.White
-        Me.lbl_gender.Location = New System.Drawing.Point(389, 134)
+        Me.lbl_gender.Location = New System.Drawing.Point(373, 134)
         Me.lbl_gender.Name = "lbl_gender"
         Me.lbl_gender.Size = New System.Drawing.Size(57, 16)
         Me.lbl_gender.TabIndex = 4
@@ -94,7 +94,7 @@ Partial Class frm_createStaff_a172423
         '
         'txt_id
         '
-        Me.txt_id.Location = New System.Drawing.Point(261, 153)
+        Me.txt_id.Location = New System.Drawing.Point(245, 153)
         Me.txt_id.Name = "txt_id"
         Me.txt_id.Size = New System.Drawing.Size(49, 20)
         Me.txt_id.TabIndex = 5
@@ -111,7 +111,7 @@ Partial Class frm_createStaff_a172423
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(216, 156)
+        Me.Label2.Location = New System.Drawing.Point(200, 156)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(43, 16)
         Me.Label2.TabIndex = 7
@@ -121,7 +121,7 @@ Partial Class frm_createStaff_a172423
         '
         Me.rbt_male.AutoSize = True
         Me.rbt_male.ForeColor = System.Drawing.Color.White
-        Me.rbt_male.Location = New System.Drawing.Point(392, 156)
+        Me.rbt_male.Location = New System.Drawing.Point(376, 156)
         Me.rbt_male.Name = "rbt_male"
         Me.rbt_male.Size = New System.Drawing.Size(48, 17)
         Me.rbt_male.TabIndex = 8
@@ -133,7 +133,7 @@ Partial Class frm_createStaff_a172423
         '
         Me.rbt_female.AutoSize = True
         Me.rbt_female.ForeColor = System.Drawing.Color.White
-        Me.rbt_female.Location = New System.Drawing.Point(392, 179)
+        Me.rbt_female.Location = New System.Drawing.Point(376, 179)
         Me.rbt_female.Name = "rbt_female"
         Me.rbt_female.Size = New System.Drawing.Size(59, 17)
         Me.rbt_female.TabIndex = 9
@@ -145,7 +145,7 @@ Partial Class frm_createStaff_a172423
         '
         Me.lbl_error_gender.AutoSize = True
         Me.lbl_error_gender.ForeColor = System.Drawing.Color.Red
-        Me.lbl_error_gender.Location = New System.Drawing.Point(389, 199)
+        Me.lbl_error_gender.Location = New System.Drawing.Point(373, 199)
         Me.lbl_error_gender.Name = "lbl_error_gender"
         Me.lbl_error_gender.Size = New System.Drawing.Size(64, 13)
         Me.lbl_error_gender.TabIndex = 10
@@ -156,7 +156,7 @@ Partial Class frm_createStaff_a172423
         '
         Me.lbl_error_id.AutoSize = True
         Me.lbl_error_id.ForeColor = System.Drawing.Color.Red
-        Me.lbl_error_id.Location = New System.Drawing.Point(216, 176)
+        Me.lbl_error_id.Location = New System.Drawing.Point(200, 176)
         Me.lbl_error_id.Name = "lbl_error_id"
         Me.lbl_error_id.Size = New System.Drawing.Size(39, 13)
         Me.lbl_error_id.TabIndex = 11

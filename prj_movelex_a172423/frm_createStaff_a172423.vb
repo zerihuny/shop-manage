@@ -45,7 +45,7 @@
             lbl_error_gender.Visible = False
         Else
             lbl_error_gender.Visible = True
-            lbl_error_gender.Text = "Select one of the type!"
+            lbl_error_gender.Text = "Select one gender!"
             checkInput = False
         End If
 

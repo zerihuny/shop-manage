@@ -55,6 +55,7 @@ Partial Class frm_mainmenu_a172423
         'btn_customer
         '
         Me.btn_customer.BackColor = System.Drawing.Color.Black
+        Me.btn_customer.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_customer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_customer.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_customer.ForeColor = System.Drawing.Color.White
@@ -68,6 +69,7 @@ Partial Class frm_mainmenu_a172423
         'btn_order
         '
         Me.btn_order.BackColor = System.Drawing.Color.Black
+        Me.btn_order.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_order.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_order.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_order.ForeColor = System.Drawing.Color.White
@@ -81,6 +83,7 @@ Partial Class frm_mainmenu_a172423
         'btn_product
         '
         Me.btn_product.BackColor = System.Drawing.Color.Black
+        Me.btn_product.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_product.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_product.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_product.ForeColor = System.Drawing.Color.White
@@ -94,6 +97,7 @@ Partial Class frm_mainmenu_a172423
         'btn_staff
         '
         Me.btn_staff.BackColor = System.Drawing.Color.Black
+        Me.btn_staff.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_staff.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_staff.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_staff.ForeColor = System.Drawing.Color.White
@@ -107,6 +111,7 @@ Partial Class frm_mainmenu_a172423
         'btn_exit
         '
         Me.btn_exit.BackColor = System.Drawing.Color.OrangeRed
+        Me.btn_exit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_exit.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_exit.Location = New System.Drawing.Point(516, 40)
