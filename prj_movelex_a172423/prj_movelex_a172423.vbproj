@@ -98,11 +98,23 @@
     <Compile Include="frm_customer_a172423.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_invois_a172423.Designer.vb">
+      <DependentUpon>frm_invois_a172423.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_invois_a172423.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_mainmenu_a172423.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_mainmenu_a172423.Designer.vb">
       <DependentUpon>frm_mainmenu_a172423.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_make_order_a172423.Designer.vb">
+      <DependentUpon>frm_make_order_a172423.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_make_order_a172423.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_orders_a172423.Designer.vb">
@@ -171,8 +183,14 @@
     <EmbeddedResource Include="frm_customer_a172423.resx">
       <DependentUpon>frm_customer_a172423.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_invois_a172423.resx">
+      <DependentUpon>frm_invois_a172423.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_mainmenu_a172423.resx">
       <DependentUpon>frm_mainmenu_a172423.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_make_order_a172423.resx">
+      <DependentUpon>frm_make_order_a172423.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_orders_a172423.resx">
       <DependentUpon>frm_orders_a172423.vb</DependentUpon>

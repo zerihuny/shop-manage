@@ -52,12 +52,23 @@
             lbl_error_name.Visible = False
         End If
 
+        'name
+        If String.IsNullOrEmpty(txt_address.Text) Then
+            lbl_error_address.Visible = True
+            lbl_error_address.Text = "Enter customer address!"
+            checkInput = False
+        Else
+            lbl_error_address.Visible = False
+        End If
+
         If checkInput = True Then
             Try
                 'name
                 run_sql_command("UPDATE TBL_CUSTOMER_A172423 SET FLD_CUSTOMER_NAME='" & txt_name.Text & "' WHERE FLD_CUSTOMER_ID='" & product_id & "'")
                 'id
                 run_sql_command("UPDATE TBL_CUSTOMER_A172423 SET FLD_CUSTOMER_ID='" & txt_id.Text & "' WHERE FLD_CUSTOMER_ID='" & product_id & "'")
+                'address
+                run_sql_command("UPDATE TBL_CUSTOMER_A172423 SET FLD_CUSTOMER_ADDRESS='" & txt_address.Text & "' WHERE FLD_CUSTOMER_ID='" & product_id & "'")
                 'updated_at
                 run_sql_command("UPDATE TBL_CUSTOMER_A172423 SET FLD_UPDATED_AT='" & today & "' WHERE FLD_CUSTOMER_ID='" & product_id & "'")
                 'created_at

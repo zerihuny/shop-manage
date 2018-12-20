@@ -35,6 +35,9 @@ Partial Class frm_viewCustomer_a172423
         Me.txt_updated_at = New System.Windows.Forms.TextBox()
         Me.txt_created_at = New System.Windows.Forms.TextBox()
         Me.btn_cancel = New System.Windows.Forms.Button()
+        Me.txt_address = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_error_address = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lbl_error_name
@@ -53,7 +56,7 @@ Partial Class frm_viewCustomer_a172423
         Me.btn_delete.BackColor = System.Drawing.Color.Red
         Me.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_delete.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_delete.Location = New System.Drawing.Point(246, 264)
+        Me.btn_delete.Location = New System.Drawing.Point(343, 265)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(75, 23)
         Me.btn_delete.TabIndex = 19
@@ -65,7 +68,7 @@ Partial Class frm_viewCustomer_a172423
         Me.btn_update.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_update.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_update.Location = New System.Drawing.Point(378, 264)
+        Me.btn_update.Location = New System.Drawing.Point(475, 265)
         Me.btn_update.Name = "btn_update"
         Me.btn_update.Size = New System.Drawing.Size(75, 23)
         Me.btn_update.TabIndex = 18
@@ -114,7 +117,7 @@ Partial Class frm_viewCustomer_a172423
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(79, 9)
+        Me.Label2.Location = New System.Drawing.Point(12, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(401, 56)
         Me.Label2.TabIndex = 12
@@ -163,19 +166,52 @@ Partial Class frm_viewCustomer_a172423
         Me.btn_cancel.BackColor = System.Drawing.Color.Yellow
         Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cancel.Location = New System.Drawing.Point(112, 264)
+        Me.btn_cancel.Location = New System.Drawing.Point(209, 265)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
         Me.btn_cancel.TabIndex = 26
         Me.btn_cancel.Text = "Cancel"
         Me.btn_cancel.UseVisualStyleBackColor = False
         '
+        'txt_address
+        '
+        Me.txt_address.Location = New System.Drawing.Point(498, 132)
+        Me.txt_address.Multiline = True
+        Me.txt_address.Name = "txt_address"
+        Me.txt_address.Size = New System.Drawing.Size(150, 56)
+        Me.txt_address.TabIndex = 27
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(495, 116)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(61, 16)
+        Me.Label5.TabIndex = 28
+        Me.Label5.Text = "Address"
+        '
+        'lbl_error_address
+        '
+        Me.lbl_error_address.AutoSize = True
+        Me.lbl_error_address.ForeColor = System.Drawing.Color.Red
+        Me.lbl_error_address.Location = New System.Drawing.Point(495, 191)
+        Me.lbl_error_address.Name = "lbl_error_address"
+        Me.lbl_error_address.Size = New System.Drawing.Size(39, 13)
+        Me.lbl_error_address.TabIndex = 29
+        Me.lbl_error_address.Text = "Label7"
+        Me.lbl_error_address.Visible = False
+        '
         'frm_viewCustomer_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
-        Me.ClientSize = New System.Drawing.Size(577, 320)
+        Me.ClientSize = New System.Drawing.Size(711, 320)
+        Me.Controls.Add(Me.lbl_error_address)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txt_address)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.txt_created_at)
         Me.Controls.Add(Me.txt_updated_at)
@@ -209,4 +245,7 @@ Partial Class frm_viewCustomer_a172423
     Friend WithEvents txt_updated_at As TextBox
     Friend WithEvents txt_created_at As TextBox
     Friend WithEvents btn_cancel As Button
+    Friend WithEvents txt_address As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents lbl_error_address As Label
 End Class

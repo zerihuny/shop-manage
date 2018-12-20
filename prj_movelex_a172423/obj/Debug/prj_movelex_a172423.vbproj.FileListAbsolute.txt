@@ -20,3 +20,5 @@ C:\Users\Ezlan\source\repos\prj_movelex_a172423\prj_movelex_a172423\obj\Debug\pr
 C:\Users\Ezlan\source\repos\prj_movelex_a172423\prj_movelex_a172423\obj\Debug\prj_movelex_a172423.frm_viewCustomer_a172423.resources
 C:\Users\Ezlan\source\repos\prj_movelex_a172423\prj_movelex_a172423\obj\Debug\prj_movelex_a172423.frm_createStaff_a172423.resources
 C:\Users\Ezlan\source\repos\prj_movelex_a172423\prj_movelex_a172423\obj\Debug\prj_movelex_a172423.frm_viewStaff_a172423.resources
+C:\Users\Ezlan\source\repos\prj_movelex_a172423\prj_movelex_a172423\obj\Debug\prj_movelex_a172423.frm_make_order_a172423.resources
+C:\Users\Ezlan\source\repos\prj_movelex_a172423\prj_movelex_a172423\obj\Debug\prj_movelex_a172423.frm_invois_a172423.resources

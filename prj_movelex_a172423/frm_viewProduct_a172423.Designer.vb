@@ -213,7 +213,7 @@ Partial Class frm_viewProduct_a172423
         Me.btn_back.BackColor = System.Drawing.Color.Yellow
         Me.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_back.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_back.Location = New System.Drawing.Point(279, 352)
+        Me.btn_back.Location = New System.Drawing.Point(258, 355)
         Me.btn_back.Name = "btn_back"
         Me.btn_back.Size = New System.Drawing.Size(75, 23)
         Me.btn_back.TabIndex = 20
@@ -225,7 +225,7 @@ Partial Class frm_viewProduct_a172423
         Me.btn_update.BackColor = System.Drawing.Color.MediumSeaGreen
         Me.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_update.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_update.Location = New System.Drawing.Point(608, 352)
+        Me.btn_update.Location = New System.Drawing.Point(587, 355)
         Me.btn_update.Name = "btn_update"
         Me.btn_update.Size = New System.Drawing.Size(75, 23)
         Me.btn_update.TabIndex = 21
@@ -237,7 +237,7 @@ Partial Class frm_viewProduct_a172423
         Me.btn_delete.BackColor = System.Drawing.Color.Red
         Me.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_delete.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_delete.Location = New System.Drawing.Point(444, 352)
+        Me.btn_delete.Location = New System.Drawing.Point(423, 355)
         Me.btn_delete.Name = "btn_delete"
         Me.btn_delete.Size = New System.Drawing.Size(75, 23)
         Me.btn_delete.TabIndex = 19

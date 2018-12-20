@@ -16,10 +16,19 @@
         'name
         If String.IsNullOrEmpty(txt_name.Text) Then
             lbl_error_name.Visible = True
-            lbl_error_name.Text = "Enter product name!"
+            lbl_error_name.Text = "Enter customer name!"
             checkInput = False
         Else
             lbl_error_name.Visible = False
+        End If
+
+        'address
+        If String.IsNullOrEmpty(txt_address.Text) Then
+            lbl_error_address.Visible = True
+            lbl_error_address.Text = "Enter customer address!"
+            checkInput = False
+        Else
+            lbl_error_address.Visible = False
         End If
 
         'id
@@ -37,7 +46,7 @@
 
         If checkInput = True Then
             Try
-                Dim mysql As String = "INSERT INTO TBL_CUSTOMER_A172423 VALUES ('" & "CUST" + txt_id.Text & "','" & txt_name.Text & "','" & today & "','" & today & "' )"
+                Dim mysql As String = "INSERT INTO TBL_CUSTOMER_A172423 VALUES ('" & "CUST" + txt_id.Text & "','" & txt_name.Text & "','" & txt_address.Text & "','" & today & "','" & today & "' )"
                 Dim save As New OleDb.OleDbCommand(mysql, myconnection2)
 
                 'close again if error accour

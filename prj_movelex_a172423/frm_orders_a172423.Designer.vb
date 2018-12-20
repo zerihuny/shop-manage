@@ -26,6 +26,7 @@ Partial Class frm_orders_a172423
         Me.btn_home = New System.Windows.Forms.Button()
         Me.grd_order = New System.Windows.Forms.DataGridView()
         Me.lbl_total = New System.Windows.Forms.Label()
+        Me.btn_make = New System.Windows.Forms.Button()
         CType(Me.grd_order, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,7 +46,7 @@ Partial Class frm_orders_a172423
         Me.btn_home.BackColor = System.Drawing.Color.Yellow
         Me.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_home.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_home.Location = New System.Drawing.Point(612, 42)
+        Me.btn_home.Location = New System.Drawing.Point(491, 42)
         Me.btn_home.Name = "btn_home"
         Me.btn_home.Size = New System.Drawing.Size(75, 23)
         Me.btn_home.TabIndex = 2
@@ -71,12 +72,26 @@ Partial Class frm_orders_a172423
         Me.lbl_total.TabIndex = 4
         Me.lbl_total.Text = "Label1"
         '
+        'btn_make
+        '
+        Me.btn_make.BackColor = System.Drawing.Color.Lime
+        Me.btn_make.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_make.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_make.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.btn_make.Location = New System.Drawing.Point(572, 42)
+        Me.btn_make.Name = "btn_make"
+        Me.btn_make.Size = New System.Drawing.Size(115, 23)
+        Me.btn_make.TabIndex = 5
+        Me.btn_make.Text = "Make Order"
+        Me.btn_make.UseVisualStyleBackColor = False
+        '
         'frm_orders_a172423
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(719, 370)
+        Me.Controls.Add(Me.btn_make)
         Me.Controls.Add(Me.lbl_total)
         Me.Controls.Add(Me.grd_order)
         Me.Controls.Add(Me.btn_home)
@@ -93,4 +108,5 @@ Partial Class frm_orders_a172423
     Friend WithEvents btn_home As Button
     Friend WithEvents grd_order As DataGridView
     Friend WithEvents lbl_total As Label
+    Friend WithEvents btn_make As Button
 End Class
