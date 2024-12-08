@@ -50,7 +50,7 @@ Partial Class frm_mainmenu_a172423
         Me.lbl_title.Name = "lbl_title"
         Me.lbl_title.Size = New System.Drawing.Size(235, 56)
         Me.lbl_title.TabIndex = 0
-        Me.lbl_title.Text = "MoveLex"
+        Me.lbl_title.Text = "Shop Managemet"
         '
         'btn_customer
         '
@@ -130,7 +130,7 @@ Partial Class frm_mainmenu_a172423
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(134, 17)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "In Control And Chill"
+        Me.Label1.Text = "Created by: Tadele Taressa"
         '
         'PictureBox1
         '
