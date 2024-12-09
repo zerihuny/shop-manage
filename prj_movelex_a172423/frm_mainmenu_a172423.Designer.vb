@@ -130,7 +130,7 @@ Partial Class frm_mainmenu_a172423
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(134, 17)
         Me.Label1.TabIndex = 6
-        Me.Label1.Text = "Created by: Tadele Taressa"
+        Me.Label1.Text = "By: Tadele Taressa^_^^_^"
         '
         'PictureBox1
         '
